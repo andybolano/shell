@@ -1,16 +1,14 @@
 const { ModuleFederationPlugin } = require("webpack").container
 
 module.exports = {
-	publicPath: "http://localhost:8080",
+	publicPath: process.env.VUE_APP_PUBLIC_PATH || "/",
 	configureWebpack: {
 		plugins: [
 			new ModuleFederationPlugin({
 				name: "shell",
 				remotes: {
-					sharedLibrary:
-						"sharedLibrary@http://localhost:8081/remoteEntry.js",
-					tripManagement:
-						"tripManagement@http://localhost:8082/remoteEntry.js",
+					sharedLibrary: `sharedLibrary@${process.env.VUE_APP_REMOTE_SHARED_LIBRARY}/remoteEntry.js`,
+					tripManagement: `tripManagement@${process.env.VUE_APP_REMOTE_TRIP_MANAGEMENT}/remoteEntry.js`,
 				},
 				shared: {
 					vue: {
