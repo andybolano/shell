@@ -1,16 +1,12 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router"
-import Trip from "tripManagement/Trip.vue"
+import LayoutRouter from "@/app/modules/layout/router"
 
 const routes: Array<RouteRecordRaw> = [
 	{
-		path: "/trip-management",
-		name: "trip",
-		component: Trip,
-	},
-	{
 		path: "/",
-		redirect: "/trip-management",
+		redirect: "/layout",
 	},
+	...LayoutRouter,
 ]
 
 const router = createRouter({
