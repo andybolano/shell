@@ -33,7 +33,7 @@ A list of technologies used within the project:
 * [Node.js](https://nodejs.org/): Version 16.0.0
 
 ## Installation for Development
-⚠️ After following the installation steps of the [sol-shared-library](https://github.com/andybolano/sol-shared-library) and the[sol-trip-management](https://github.com/andybolano/sol-tripManagement) projects *make sure that they are  working properly* and follow the next steps:
+⚠️ After following the installation steps of the [sol-shared-library](https://github.com/andybolano/sol-shared-library) and the  [sol-trip-management](https://github.com/andybolano/sol-tripManagement) projects *make sure that they are  working properly* and follow the next steps:
 follow the next steps: 
 #### Clone project
 ```
