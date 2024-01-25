@@ -1,10 +1,10 @@
 import { createApp } from "vue"
 import App from "./App.vue"
 import router from "./router"
-import "sharedLibrary/mainStyle"
-import useI18n from "tripManagement/i18nModule"
-import globalComponents from "./globalComponents"
-import filters from "sharedLibrary/filters"
+import "./remotes-config/shared-library/style"
+import { globalComponents } from "./globalComponents"
+import filters from "./remotes-config/shared-library/filters"
+import useI18n from "./remotes-config/trip-management/i18n"
 
 const app = createApp(App)
 app.use(router)
