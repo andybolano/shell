@@ -15,12 +15,13 @@ module.exports = {
 						eager: true,
 						singleton: true,
 						requiredVersion: "3.2.13",
+					},
 					"vue-router": {
 						eager: true,
 						singleton: true,
 						requiredVersion: "4.2.5",
 					},
-				},
+				}
 			}),
 		],
 		optimization: {
