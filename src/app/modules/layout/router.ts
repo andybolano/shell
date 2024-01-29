@@ -27,7 +27,7 @@ const layoutRouter: Array<RouteRecordRaw> = [
 					}),
 			},
 			{
-				path: "/",
+				path: "",
 				redirect: { name: "trip-list" },
 			},
 		],
