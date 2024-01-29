@@ -5,6 +5,7 @@ const routes: Array<RouteRecordRaw> = [
 	{
 		path: "/",
 		redirect: "/layout",
+		name: "root",
 	},
 	...LayoutRouter,
 ]
