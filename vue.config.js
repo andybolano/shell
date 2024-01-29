@@ -14,8 +14,7 @@ module.exports = {
 					vue: {
 						eager: true,
 						singleton: true,
-						requiredVersion: "3.4.14",
-					},
+						requiredVersion: "3.2.13",
 					"vue-router": {
 						eager: true,
 						singleton: true,
